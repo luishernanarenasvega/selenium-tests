@@ -1,4 +1,4 @@
-name: Selenium Tests
+name: Selenium Tests on Windows with Chrome
 
 on:
   push:
@@ -25,4 +25,4 @@ jobs:
 
     - name: Run Selenium tests
       run: |
-        pytest tests/selenium
+        python -m pytest tests/selenium

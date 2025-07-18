@@ -9,7 +9,7 @@ def test_page_title():
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
     
-    browser = webdriver.Chrome(service=Service("C:\\Users\\Luis Arenas\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"))
+    browser = webdriver.Chrome(options=chrome_options)
     browser.get('https://github.com')
 
     titleElement = browser.find_element(By.ID,'hero-section-brand-heading')
